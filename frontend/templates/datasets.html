@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datasets - AI Data Marketplace</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">AI Data Marketplace</div>
+                <nav>
+                    <ul>
+                        <li><a href="/">Dashboard</a></li>
+                        <li><a href="/datasets">Datasets</a></li>
+                        <li><a href="/analytics">Analytics</a></li>
+                        <li><a href="/transactions">Transactions</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Dataset Marketplace</h1>
+
+        <div class="search-container">
+            <div class="search-form">
+                <input type="text" id="search-input" class="search-input" 
+                       placeholder="Search datasets by name, description, or category...">
+                <button id="search-btn" class="btn btn-primary">Search</button>
+            </div>
+            <div class="filter-group">
+                <select id="category-filter" class="filter-select">
+                    <option value="">All Categories</option>
+                    <option value="machine-learning">Machine Learning</option>
+                    <option value="finance">Finance</option>
+                    <option value="healthcare">Healthcare</option>
+                    <option value="transportation">Transportation</option>
+                    <option value="retail">Retail</option>
+                </select>
+                <select id="price-filter" class="filter-select">
+                    <option value="">All Prices</option>
+                    <option value="10">Under 10 MNEE</option>
+                    <option value="50">Under 50 MNEE</option>
+                    <option value="100">Under 100 MNEE</option>
+                </select>
+                <select id="quality-filter" class="filter-select">
+                    <option value="">All Quality</option>
+                    <option value="0.8">High Quality (0.8+)</option>
+                    <option value="0.6">Medium Quality (0.6+)</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="dataset-grid" class="dataset-grid">
+            <div class="loading">
+                <div class="spinner"></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="/static/js/api.js"></script>
+    <script src="/static/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autonomous AI Data Marketplace - Dashboard</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">AI Data Marketplace</div>
+                <nav>
+                    <ul>
+                        <li><a href="/datasets">Datasets</a></li>
+                        <li><a href="/analytics">Analytics</a></li>
+                        <li><a href="/transactions">Transactions</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="dashboard">
+            <aside class="sidebar">
+                <h3>Navigation</h3>
+                <ul class="sidebar-menu">
+                    <li class="active">Overview</li>
+                    <li>Marketplace Stats</li>
+                    <li>Performance</li>
+                    <li>Recent Activity</li>
+                </ul>
+            </aside>
+
+            <div class="main-content">
+                <h1>Marketplace Dashboard</h1>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3>Total Datasets</h3>
+                        <div class="stat-value" id="total-datasets">0</div>
+                        <div class="stat-change positive">+12% this week</div>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Total Transactions</h3>
+                        <div class="stat-value" id="total-transactions">0</div>
+                        <div class="stat-change positive">+8% this week</div>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Total Volume</h3>
+                        <div class="stat-value" id="total-volume">0 MNEE</div>
+                        <div class="stat-change positive">+15% this week</div>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Active Agents</h3>
+                        <div class="stat-value" id="active-agents">0</div>
+                        <div class="stat-change positive">+5% this week</div>
+                    </div>
+                </div>
+
+                <div class="charts-grid">
+                    <div class="chart-container">
+                        <h2>Transaction Volume</h2>
+                        <div class="chart-wrapper">
+                            <canvas id="transaction-volume-chart"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="chart-container">
+                        <h2>Dataset Distribution</h2>
+                        <div class="chart-wrapper">
+                            <canvas id="dataset-distribution-chart"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="charts-grid">
+                    <div class="chart-container">
+                        <h2>Price Trends</h2>
+                        <div class="chart-wrapper">
+                            <canvas id="price-trends-chart"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="chart-container">
+                        <h2>Agent Activity</h2>
+                        <div class="chart-wrapper">
+                            <canvas id="agent-activity-chart"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chart-container">
+                    <h2>Performance Metrics</h2>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <h3>Transactions Per Second</h3>
+                            <div class="stat-value" id="metric-tps">0</div>
+                        </div>
+                        <div class="stat-card">
+                            <h3>Smart Contracts</h3>
+                            <div class="stat-value" id="metric-contracts">0</div>
+                        </div>
+                        <div class="stat-card">
+                            <h3>Average Latency</h3>
+                            <div class="stat-value" id="metric-latency">0ms</div>
+                        </div>
+                        <div class="stat-card">
+                            <h3>System Uptime</h3>
+                            <div class="stat-value" id="metric-uptime">0%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="/static/js/api.js"></script>
+    <script src="/static/js/charts.js"></script>
+    <script src="/static/js/main.js"></script>
+</body>
+</html>
