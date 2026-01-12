@@ -16,7 +16,9 @@ This system enables:
 
 ## Links
 -**Source Code**: https://github.com/SamiraSamrose/autonomous-ai-data-marketplace
+
 -**Video Demo**: https://youtu.be/tVZpVmZ01DU
+
 -**Notebook**: https://github.com/SamiraSamrose/autonomous-ai-data-marketplace/blob/main/Autonomous_AI_Data_Marketplace_(Agent_to_Agent_Economy).ipynb
 
 ## Features
